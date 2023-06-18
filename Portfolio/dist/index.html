@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpit Tiwari | Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/22b66672aa.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        /** @type {import('tailwindcss').Config} */
+        tailwind.config = {
+            content: ["./*.{html,js}"],
+          theme: {
+            extend: {
+                colors: {
+                    red: '#BF3325',
+                    aorange: '#581C87',
+                    mblack: '#2E2E2E',
+                    adark: '#060606BC',
+                    bwhite: '#F7F7F7',
+                    lgrey: '#F7F7F7',
+                    bgray: '#1A1A1A',
+                    bgraytrans: '#000000A2',
+                    bluetrans: '#0F172AA2',
+                    bgblue: '#0F173F',
+                    beige: '#C0A062',
+                    bgpurple: '#231557',
+                    lpurple: '#6524AA'
+                },
+                screens : {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    xl: '1280px',
+                    xxl: '1440px'
+            },
+        },
+        Plugins:[],
+        }
+    }
+    </script>
+    
+</head>
+<body class="bg-black">
+    
+    <!-- NAVIGATION AREA -->
+    <div class="navArea bg-bgraytrans sticky top-0 text-bwhite px-8 flex justify-between items-center">
+        <div class="flex space-x-4 px-4">
+            <a href="" class="font-bold text-xl">
+                <span class="animate-characters text-aorange text-4xl">A</span>RPIT TIWARI
+            </a>
+        </div>
+
+        <!-- NAVBAR -->
+        <div id="nav_menu" class="w-1/2 hidden lg:flex justify-between font-semibold decoration-lpurple py-2">
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#home">Home</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#about">About</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#project">Projects</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#resume">Resume</a>
+            <a class="navlinks transition px-4 py-2 rounded ease-in-out duration-300" href="#contact">Contact</a>
+        </div>
+
+        <!-- NAV LAST -->
+        <div class="hamburger justify-around lg:hidden h-8">
+            <div></div>            
+        </div>        
+        <div id="dropdown1" class="w-28">
+            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#home">Home</a>
+            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#about">About</a>
+            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#project">Projects</a>
+            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#resume">Resume</a>
+            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#contact">Contact</a>
+        </div>          
+    </div>
+
+    <!-- HERO -->
+    <div id="home" class="bg-[url('./assets/bg.jpg')] bg-cover bg-center bg-no-repeat md:py-4 sm:py-20">
+        <div class="hero-title content-center sm:text-center px-2 md:px-22 py-8 lg:py-24 sm:m-12">
+            <h2 class="box w-full md:w-5/6 lg:w-11/12 text-5xl md:px-12 px-0 py-2 font-bold text-red sm:mx-2 md:mx-16 md:px-0">WELCOME TO MY <span class="text-bwhite py-3">PORTFOLIO</span></h2>
+            <div class="flex justify-around align-center h-10 w-full m-2">
+                <a href="#about">
+                    <div class="arrows items-center h-6 object-contain">
+                        <div class="scroll-down"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- REST -->
+    <div class="bg-gradient-to-r from-zinc-950 to-fuchsia-950 items-center flex justify-center flex-col py-8 space-y-6 lg:space-y-4">
+
+        <!-- ABOUT -->
+        <h2 class="text-3xl lg:text-5xl font-bold text-bwhite my-6">About me</h2>
+        <div id="about" class="bg-slate-900 w-5/6 text-bwhite text-center py-12 md:py-20 shadow-lg shadow-black md:px-8 lg:px-16 px-4 space-y-4">            
+            <h4 class="text-lg lg:text-3xl font-semibold">Hi ! I'm Arpit Tiwari</h4>
+            <h6 class="text-lg lg:text-2xl font-bold text-beige">A Full-Stack Web-Developer based in Bengaluru</h6>
+            <p class="text-sm md:text-base">I have been working around Web-Designing for more than a year now. I enjoy building everything from simplistic business design to rich interactive web applications. I hope you find everything about me here. I am passionate about Web-Development and have worked on several tools including:
+                React, Express, NodeJs, Tailwind, Bootstrap, MongoDB, MySQL, Git, GitHub. 
+
+I'm an Engineering Graduate from Government Engineering College-Bilaspur, in Electrical Engineering. I've made numerous skill testing projects in the technologies mentioned. More recently, I've been Certified from iNeuron as a Full-Stack Web-Developer.
+            </p>
+            <div class="text-left my-4">
+                <h6 class="text-beige font-bold text-sm lg:text-md">Want to have a discussion ?</h6>
+                <p><span class="text-beige font-bold">Email:</span> arpitnt10@gmail.com</p>
+                <a href=""><span class="text-beige font-bold">LinkedIn:</span> Join me</a>
+            </div>
+        </div>
+<br>
+<br>
+        <!-- PROJECTS -->
+        <h2 id="project" class="text-3xl lg:text-5xl text-bwhite font-bold my-12">Projects</h2>y
+
+        <!-- PROJECT 1 -->
+        <div class="project w-5/6 bg-zinc-900 flex items-center text-center md:text-left my-6
+        shadow-lg shadow-black transition-smooth">
+            <div class="bg-slate-900 p-6">
+                <div class="lg:float-left w-full lg:w-1/2 space-y-6 my-4">
+                    <h4 class="text-beige text-3xl text-center lg:text-left">Projects on JavaScript</h4>
+                    <p class="no-scrollbar text-bwhite h-32 overflow-x-hidden bg-zinc-900 rounded-sm px-2 py-2">Task oriented projects in JavaScript
+                        enriched my skills as a JS Developer and helped me to write better and optimised code. Working with Syntax and Basic Concepts, DOM Manipulation, Events, Asynchronous Programming among others. <br>
+                        The Projects include :- <br>
+                        Case Convertor, Ramdom Password Generator, Game of Rock, Paper & Scissor, QR code generator using API and more..</p>
+                    <div class="flex space-x-4 justify-center lg:justify-start">
+                        <a href="github.com/Arpitxd41/javaScriptAssignments"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-zinc-950  hover:text-beige">GitHub</button></a>
+                        <a href="https://passwordgeneratorbyart.netlify.app/"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-zinc-950  hover:text-beige">Preview</button></a>
+                    </div>
+                </div>
+                <div class="lg:float-right w-full lg:w-2/5 bg-black p-4 h-60 my-6">
+                    <img class="w-full h-56 lg:px-0 md:px-32 px-2 object-contain" src="./assets/js.png" alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- PROJECT 2 -->
+        <div class="project w-5/6 bg-zinc-900 flex items-center text-center md:text-left
+        shadow-lg shadow-black transition-smooth">
+            <div class="bg-slate-900 p-6">
+                <div class="lg:float-left w-full lg:w-2/5 bg-black p-2 h-60 my-6">
+                    <img class="w-full h-56 lg:px-0 md:px-32 px-0 object-contain" src="./assets/tailwind.png" alt="">
+                </div>
+                <div class="lg:float-right w-full lg:w-1/2 space-y-4 my-4">
+                    <h4 class="text-beige text-3xl font-semibold text-center lg:text-left">Tailwind Projects : Website Cloning</h4>
+                    <p class="no-scrollbar text-bwhite h-32 overflow-x-hidden bg-zinc-900 rounded-sm px-2 py-2">Here I have cloned some websites using TailwindCSS. I have loved this tool and it is very efficient for making websites better & faster.</p>
+                    <div class="flex items-end space-x-4 justify-center lg:justify-start">
+                        <a href="github.com/Arpitxd41/Work_in_Tailwind"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-zinc-950  hover:text-beige">GitHub</button></a>
+                        <a href="https://tailwindclone2byart.netlify.app/"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-zinc-950  hover:text-beige">Preview</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- PROJECT 3 -->
+        <div class="project w-5/6 bg-zinc-900 flex items-center text-center md:text-left 
+        shadow-lg shadow-black transition-smooth">
+            <div class="bg-slate-900 p-6">
+                <div class="lg:float-left w-full lg:w-1/2 space-y-4 my-4">
+                    <h4 class="text-beige text-3xl font-semibold text-center lg:text-left">Work on ReactJS</h4>
+                    <p class="no-scrollbar text-bwhite h-32 overflow-x-hidden bg-zinc-900 rounded-sm px-2 py-2">Some Projects using the React UI Development Library. I also learned about Rendering, Scripting and Component Based Architecture through ReactJS,
+                        which enables us to design fully functioning web-applications faster and more detailed. DOM manipulation, useState, Hooks, useEffects are some of
+                        the concepts that I have explored in these projects.</p>
+                    <div class="flex space-x-4 justify-center lg:justify-start">
+                        <a href="github.com/Arpitxd41/ReactJS"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-black  hover:text-beige">GitHub</button></a>
+                        <a href=""><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-black hover:text-beige">Preview</button></a>
+                    </div>
+                </div>
+                <div class="lg:float-right w-full lg:w-2/5 bg-black p-2 h-60 my-6">
+                    <img class="w-full h-56 lg:px-0 md:px-32 px-0 object-contain" src="./assets/react.png" alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- PROJECT 4 -->
+        <div class="project w-5/6 bg-zinc-900 flex items-center text-center md:text-left 
+        shadow-lg shadow-black transition-smooth">
+            <div class="bg-slate-900 p-6">
+                <div class="lg:float-left w-full lg:w-2/5 bg-black px-2 h-60 my-6">
+                    <img class="w-full h-60 lg:px-0 md:px-32 object-contain" src="./assets/cover.png" alt="">
+                </div>
+                <div class="lg:float-right w-full lg:w-1/2 space-y-4 my-4">
+                    <h4 class="text-beige text-3xl font-semibold text-center lg:text-left">Full Stack <br> e-Commerce Web-Site</h4>
+                    <p class="no-scrollbar text-bwhite h-32 overflow-x-hidden bg-zinc-900 rounded-sm px-2 py-2">This is a Unisex Sports Wear selling Full STack e-Commerce Web Site I have built. Used JASON Web Token for Authenticatuon and Role Management.
+                        User and Admin dashboard is present in the frontend with backend check for Admin Routes.</p>
+                    <div class="flex space-x-4 justify-center lg:justify-start">
+                        <a href="github.com/Arpitxd41/FullStackWebApp"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-black  hover:text-beige">GitHub</button></a>
+                        <a href=""><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-black  hover:text-beige">Preview</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- PROJECT 5 -->
+        <div class="project w-5/6 bg-zinc-900 flex items-center text-center md:text-left 
+        shadow-lg shadow-black transition-smooth">
+            <div class="bg-slate-900 p-6">
+                <div class="lg:float-left w-full lg:w-1/2 space-y-4 my-4">
+                    <h4 class="text-beige text-3xl font-semibold text-center lg:text-left">Work on HTML & CSS</h4>
+                    <p class="no-scrollbar text-bwhite h-32 overflow-x-hidden bg-zinc-900 rounded-sm px-2 py-2">Projects purely based on HTML & CSS, building different kinds of web-pages.The features are screen responsiveness using HTML and CSS.</p>
+                    <div class="flex space-x-4 justify-center lg:justify-start">
+                        <a href="https://github.com/Arpitxd41/LCOProjects"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-black  hover:text-beige">GitHub</button></a>
+                        <a href="https://landingpagebyart.netlify.app"><button class="w-4/10 h-10 text-black border-2 border-beige bg-beige rounded-md px-8 py-2 transition ease-in-out
+                            hover:bg-black  hover:text-beige">Preview</button></a>
+                    </div>
+                </div>
+                <div class="lg:float-right w-full lg:w-2/5 bg-black py-2 px-4 h-52 my-6">
+                    <img class="w-full h-48 lg:px-0 md:px-32 px-0 object-contain" src="./assets/htmlcss.png" alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+
+ 
+<!-- MORE PROJECTS BUTTON -->
+<!-- <div class="justify-center flex py-12">
+    <a href="" class=""><button class="border-2 border-aorange text-aorange font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
+        hover:shadow-lg hover:shadow-black hover:bg-aorange hover:text-black">Click here for More</button></a>
+</div> -->
+
+        <!-- CV BUTTON -->
+        <div id="resume" class="justify-center flex py-12">
+            <a href="" class=""><button class="border-2 border-fuchsia-500 text-fuchsia-500 font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
+                hover:shadow-lg hover:shadow-black hover:bg-fuchsia-500 hover:text-black">Download Resume</button></a>
+        </div>
+
+        <!-- RESUME -->
+        <h2 class="text-5xl text-bwhite font-bold hidden lg:block">Resume</h2>
+        <br>
+        <div class="hidden lg:block w-11/12 rounded-md flex items-center px-2 bg-lgrey shadow-lg shadow-black">
+            <div class="float-left w-2/6 py-8 px-6">
+                <img src="./assets/arpit.jpg" class="rounded-sm shadow-lg shadow-black h-56 object-scale-down" alt="">
+            </div>
+            <div class="float-right w-4/6 text-bgray py-6 px-3">
+                <h2 class="text-4xl text-black font-bold my-4">Arpit Tiwari</h2>
+                <h4 class="text-xl text-red">An aspiring Full-Stack Web Developer</h4>
+                <hr class="my-3 mr-6 border-black">
+                <h5 class="text-sm text-black">I pride myself as a dedicated learner. 
+                    I love to utilize my skills for achieving the targets given to me, delivering best of one's performance. 
+                    I work to utilize my innovative ideas and qualitative skills for the benefits of me, my team and overall development of the organization. 
+                    Challenges are my motivation and I have firm belief in target oriented work.</h5>
+            </div>
+        </div>
+    
+        <div class="hidden bg-alightgray lg:flex space-x-4 justify-center items-start w-11/12">
+
+            <!-- LEFT SECTION -->
+            <div class="float-left bg-lgrey shadow-lg shadow-black w-2/6 rounded-md px-4 py-20">
+                <!-- contact -->
+                <h2 class="font-bold text-black text-2xl">Contact</h2>
+                <hr class="border-red border-2">
+                <div class="flex flex-col my-4 h-max space-y-4">
+                    <a href="" class="flex flex-row space-x-2 text-sm text-black"> <img width="30px" class="connectIcon" src="./assets/message.png" alt=""><p class="connectContent hidden lg:block">Full Stack Web-Developer</p></a>
+                    <a href="" class="flex flex-row space-x-2 text-sm text-black"> <img width="30px" class="connectIcon" src="./assets/mail.png" alt=""><p class="connectContent hidden lg:block">arpittiwari.in237@gmail.com</p></a>
+                    <a href="" class="flex flex-row space-x-2 text-sm text-black"> <img width="30px" class="connectIcon" src="./assets/linkedin.png" alt=""><p class="connectContent hidden lg:block">linkedin.com/in/arpittiwari237</p></a>
+                    <a href="" class="flex flex-row space-x-2 text-sm text-black"> <img width="30px" class="connectIcon" src="./assets/github.png" alt=""><p class="connectContent hidden lg:block">github.com/Arpitxd41</p></a>
+                    <a href="" class="flex flex-row space-x-2 text-sm text-black"> <img width="30px" class="connectIcon" src="./assets/pin.png" alt=""><p class="connectContent hidden lg:block">Bangalore, India</p></a>
+                    <a href="" class="flex flex-row space-x-2 text-sm text-black"> <img width="30px" class="connectIcon" src="./assets/phone.png" alt=""><p class="connectContent hidden lg:block">contact</p></a>
+                    <a href="" class="flex flex-row space-x-2 text-sm text-black"></a>
+                </div>
+                <!-- skills -->
+                <div class="">
+                    <h3 class="font-bold text-black text-2xl">Skills</h3>
+                    <hr class="border-red border-2">
+                    <div class="text-sm py-4 my-3 text-bwhite h-max items-start">
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Javascript</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">React</a>
+                        <!-- <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Angular</a> -->
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Express.js</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Node.js</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">HTML5</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">CSS</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Tailwind.CSS</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Bootstrap</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">MongoDB</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">MySQL</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Linux</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">GitHub</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">SCADA_Automation</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">PLC</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">MATLAB</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">MS_Office</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Team_Management</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Literary_Skills</a>
+                        <a href="" class="bg-red rounded-md h-6 px-3 py-2 leading-10 w-max">Public_Speaking</a>
+                    </div>
+                </div>
+
+                <h2 class="font-bold text-black text-2xl">Education</h2>
+                <hr class="border-2 border-red">
+                <div class="py-2 my-3 space-y-2">                    
+                    <h4 class="font-semibold text-black">Bachelor of Engineering | Electrical Engineering | 7.2 CGPA</h4>
+                    <h4 class="text-gray-950">GOVERNMENT ENGINEERING COLLEGE - Bilaspur, Chhattisgarh </h4>
+                    <p class="text-red text-sm">06/2014 - 06/2018</p>
+                </div>
+
+                <div class="py-2 space-y-2">
+                    <h2 class="font-bold text-black text-2xl">Area of Response</h2>
+                    <hr class="border-2 border-red">
+                    <h4 class="font-semibold text-bgray">Branch Co-ordinator (2015-17) | Training & Placement Office | GEC-Bilaspur</h4>
+                    <ul class="text-black my-3 text-sm">
+                        <li>Industrial Training Programme (June 2016) | CRISP - Bhopal</li>
+                        <li>Mid-Session Industrial Training program (Dec 2016) | CRISP - Bhopal</li>
+                    </ul>
+                    <h4 class="text-black">Leader in Students Union of Govt. Engineering College - Bilaspur  </h4>
+
+                </div>  
+                <!-- interests -->
+                <div class="">
+                    <h3 class="font-bold text-black text-2xl">Interests</h3>
+                    <hr class="border-red border-2">
+                    <div class="text-sm py-4 my-3 text-bwhite h-max items-start">
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Art_&_Craft</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Painting</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Poetry</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">FPP/TPP_Games</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Badminton</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Literature</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Book_Reading</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Technology</a>
+                        <a href="" class="bg-red rounded-md h-8 px-3 py-2 leading-10 w-max">Travelling</a>
+                    </div>
+                </div>
+                
+                <div class="py-2">
+                    <h2 class="font-bold text-black text-2xl">Languages</h2>
+                    <hr class="border-2 border-red">
+                    <div class="py-2 my-3 space-y-2">
+                        <h4 class="text-sm text-black pr-4">English</h4>
+                        <h4 class="text-sm text-black pr-4">Hindi</h4>
+                        <h4 class="text-sm text-black pr-4">Chhattisgarhi</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SECTION -->
+            <div class="float-right bg-lgrey shadow-lg shadow-black w-5/6 rounded-md px-6 py-7">
+                
+                <!-- ABOUT -->
+                <div class="py-2">
+                    <h2 class="font-bold text-black text-2xl">About Me</h2>
+                    <hr class="border-2 border-red">
+                    <h4 class="text-sm text-black pr-2 py-2">I am a Full-Stack Web Developer based in Bangalore(Karnataka, India)and I work in JavaScript , I have been learning the language for eight months
+                        now. So far I have completed any task given to me. I love coding and I am looking forward to grow as Web-Developer. I pride myself as a dedicated
+                        learner. I love to utilize my skills for achieving the targets given to me, delivering best of my performance. I work to utilize creativity, my ideas and
+                        qualitative skills for the benefits of me, my team and overall development of the organization. Challenges are my motivation and I have firm belief in
+                        target oriented work.</h4>
+                </div>
+
+                <!-- WORK AND PROJECTS -->
+                <div class="py-2">
+                    <h2 class="font-bold text-black text-3xl">Work & Projects</h2>
+                    <hr class="border-2 border-red">
+                    <div class="space-y-2 py-6">
+                        <div class="space-y-2">
+                            <h4 class="font-semibold text-xl text-black underline">Full Stack e-Commerce Web-Site</h4>
+                            <p class="text-gray-950">This is a Unisex Sports Wear selling Full STack e-Commerce Web Site I have built. Used JASON Web Token for Authenticatuon and Role Management.
+                                User and Admin dashboard is present in the frontend with backend check for Admin Routes.</p>
+                            <a href="" class="text-red text-sm">github.com/Arpitxd41/FullStackWebApp</a>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-semibold text-xl text-black underline">Projects on JavaScript</h4>
+                            <p class="text-gray-950">I learned JavaScript as my first programming-language and with individual projects and assignments I tried to explore it. These task oriented designes
+                                enriched my skills as a JS Developer and helped me to write better and optimised code using cponcepts like Query-Selector, Loops, Event Listeners,
+                                Set, Map, Closures, Promises and Event-loops among others..
+                                The Projects include :-
+                                Case Convertor, Ramdom Password Generator, Game of Rock, Paper & Scissor, QR code generator using API and more..</p>
+                            <a href="" class="text-red text-sm">github.com/Arpitxd41/javaScriptAssignments</a>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h4 class="font-semibold text-xl text-black underline">ReactJS</h4>
+                            <p class="text-gray-950">Some Projects using the React UI Development Library. I also learned about Rendering, Scripting and Component Based Architecture through ReactJS,
+                                which enables us to design fully functioning web-applications faster and more detailed. DOM manipulation, useState, Hooks, useEffects are some of
+                                the concepts that I have explored in these projects.</p>
+                            <a href="" class="text-red text-sm">github.com/Arpitxd41/ReactJS</a>
+                        </div>
+        
+                        <div class="space-y-2">
+                            <h4 class="font-semibold text-xl text-black underline">Tailwind Projects</h4>
+                            <p class="text-gray-950">Here I have cloned some websites using TailwindCSS. I have loved this tool and it is very efficient for making websites better & faster.</p>
+                            <a href="" class="text-red text-sm">github.com/Arpitxd41/Work_in_Tailwind</a>
+                        </div>
+        
+                        <div class="space-y-2">
+                            <h4 class="font-semibold text-xl text-black underline">Portfolio WebSite</h4>
+                            <p class="text-gray-950">A responsive Web-Site using HTML, CSS, Tailwind & JavaScript. I kept the design to suit the professional showcasing of the Portfolio of an Individual,
+                                While making it fully functioning with all the details that are possibly required by the Admin and the User.</p>
+                            <a href="" class="text-red text-sm">github.com/Arpitxd41/portfolioArpit</a>
+                        </div>
+                    </div>
+                </div>                
+
+                <!-- CERTIFICATIONS -->
+                <h2 class="font-bold text-black text-2xl">Certifications</h2>
+                <hr class="border-2 border-red">
+                <div class="py-2 space-y-4">
+                    <div class="space-y-0">
+                        <h4 class="font-semibold text-lg text-black underline">JavaScript Full Stack Web-Development
+                            Course</h4>
+                        <p class="text-gray-950 text-sm">In this course under very proficient and skiiled Teachers & Mentors I have been introduced to the fundamentals of JavaScript. In the process I learned about Front-End Development, Back-End Development, Database Management, API Handeling, Authentication & Authorization, Project Deployments etc. which we learned with the lot of Project Work alongside.</p>
+                        <p class="text-red text-sm">Aug-2022-Jan-2023 | Course Certification from iNeuron, Learn Code Online (LCO)</p>
+                    </div>
+                    <div class="space-y-0">
+                        <h4 class="font-semibold text-lg text-black underline">HTML & CSS</h4>
+                        <p class="text-gray-950 text-sm">Learned the fundamentals of HTML5 and CSS3 and I explored the concepts like Box-Model, CSS-Transformations, Structure-Layout, Tags-Attributes and Selectors, Media Attachments, Hyperlinks, Transitions & Animations, Screen-Responsiveness etc. which can be seen in the individual projects I have made</p>
+                        <p class="text-red text-sm">Aug-Oct 2022 | Course Certification from iNeuron, Learn Code Online (LCO)</p>
+                    </div>
+                    <div class="space-y-0">
+                        <h4 class="font-semibold text-lg text-black underline">PLC & SCADA | Supervisory Control & Data Aquisition</h4>
+                        <p class="text-gray-950 text-sm">Worked with SCADA applications for Indutrial Processes, collecting data in real time from remote locations manipulating and controlling equipment and dynamic state, anticipation of conditions and automated system responses under challenging environment.</p>
+                        <p class="text-red text-sm">Nov-Dec 2017 | CRISP - Bhopal (MP)</p>
+                    </div>
+                    <div class="space-y-0">
+                        <h4 class="font-semibold text-lg text-black underline">MATLAB | Simulink</h4>
+                        <p class="text-gray-950 text-sm">Under an in-house training program, worked with simulation of electrical networking, power system and control with data matrices. Projects and presentations were given as the part of certification course.</p>
+                        <p class="text-red text-sm">Nov-Dec 2017 | CRISP - Bhopal (MP)</p>
+                    </div>
+                    <div class="space-y-0">
+                        <h4 class="font-semibold text-lg text-black underline">Industrial Automation | PLC Program Application</h4>
+                        <p class="text-gray-950 text-sm">Ladder Logic, Functional Block Diagram networks and Sequential Functions as an interface to the control system in Industrial Automation with hands on project implementation. Individual projects desgined and simulated in Siemens Automation's PLC controllers.</p>
+                        <p class="text-red text-sm">Dec 2016 | CRISP - Bhopal (MP)</p>
+                    </div>
+                 </div> 
+
+                           
+            </div>
+        </div>
+
+        <!-- CV DOWNLOAD BUTTON -->
+        <div class="justify-center lg:flex py-12 hidden">
+            <a href="" class=""><button class="border-2 border-aorange text-aorange font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
+                hover:shadow-lg hover:shadow-black hover:bg-aorange hover:text-black">Download Resume</button></a>
+        </div>
+
+        <!-- APPLICATIONS -->
+        <div class="bg-black text-bwhite text-center grid md:flex rounded-md md:w-full w-1/3 md:justify-between lg:p-12">
+            <!-- <p class="p-4 text-2xl space-y-4 items-center flex flex-col"><img class="h-28 py-2" src="./assets/angular.png" alt="">Angular</p> -->
+            <p class="p-4 text-sm lg:text-2xl space-y-4 items-center flex flex-col"><img class="h-20 lg:h-28 py-2" src="./assets/html5.png" alt="">HTML-5</p>
+            <p class="p-4 text-sm lg:text-2xl space-y-4 items-center flex flex-col"><img class="h-20 lg:h-28 py-2" src="./assets/css3.png" alt="">CSS-3</p>
+            <p class="p-4 text-sm lg:text-2xl space-y-4 items-center flex flex-col"><img class="h-20 lg:h-28 py-2" src="./assets/react.png" alt="">React</p>
+            <p class="p-4 text-sm lg:text-2xl space-y-4 items-center flex flex-col"><img class="h-20 lg:h-28 py-2" src="./assets/javascript.png" alt="">JavaScript</p>
+            <p class="p-4 text-sm lg:text-2xl space-y-4 items-center flex flex-col"><img class="h-20 lg:h-28 py-2" src="./assets/node-js.png" alt="">NodeJs</p>
+            <p class="p-4 text-sm lg:text-2xl space-y-4 items-center flex flex-col"><img class="h-20 lg:h-28 py-2" src="./assets/mongo.png" alt="">MongoDB</p>
+        </div>
+        <br>
+        <br>
+
+        <!-- CONTACT FORM -->
+        <h3 class="text-3xl md:text-5xl text-bwhite font-bold">Get in touch</h3>
+        <br>
+        <div id="contact" class="flex flex-col w-11/12 md:w-3/5 space-y-12 text-center items-center bg-slate-900 shadow-md shadow-black rounded-md p-12">
+            <form action="#" id="contact" class="form-contact flex flex-col p-1 md:p-6 space-y-5 w-full md:w-5/6">
+                <div class="flex flex-col">
+                    <label for="name" class="text-beige text-left">Name :</label>
+                    <input autocomplete="off" minlength="4" required id="name" type="text" placeholder="Enter your Full Name" class="border-b-2 border-l-2 border-black py-1 pl-2 rounded-md text-sm text-bwhite bg-bgraytrans" style="text-transform: capitalize;">
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="text-beige text-left">Email :</label>
+                    <input autocomplete="off" maxlength="25" required id="email" type="email" placeholder="Your Email-id" class="border-b-2 border-l-2 border-black py-1 pl-2 rounded-md text-sm text-bwhite bg-bgraytrans">
+                </div>
+                <div class="flex flex-col">
+                    <label for="phone" class="text-beige text-left">Phone No. :</label>
+                    <input autocomplete="off" minlength="10" maxlength="13" required id="phone" type="number" placeholder="Your Contact Number" class="border-l-2 border-black py-1 pl-2 rounded-md text-sm text-bwhite bg-bgraytrans">
+                </div>
+                <div class="flex flex-col">
+                    <label for="subject" class="text-beige text-left">Subject :</label>
+                    <input autocomplete="off" maxlength="130" required id="subject" type="text" placeholder="Enter Subject" class="border-b-2 border-l-2 border-black py-1 pl-2 rounded-md text-sm text-bwhite bg-bgraytrans">
+                </div>
+                <div class="flex flex-col">
+                    <label autocomplete="off" for="message" class="text-beige text-left">Message :</label>
+                    <textarea id="message" style="vertical-align:text-top" type="text" placeholder="Write your Message here" class="border-b-2 border-l-2 border-black py-1 pl-2 rounded-md text-sm focus:text-md focus:bg-zinc-950 text-bwhite bg-bgraytrans h-32" maxlength="500"></textarea>
+                </div>
+                <input type="submit" id="submit" class="submit bg-beige text-black py-1 md:py-2 text-xl rounded-md border-2 border-beige w-1/2
+            hover:bg-black hover:text-beige hover:shadow-lg hover:shadow-black mx-24 my-4">Submit</button>
+            </form>
+            
+        </div>
+
+        <br>
+        <br>
+        <!-- FIND ME HERE -->
+        <div class="flex flex-row w-full space-y-2 bg-black py-4 px-2 md:py-8">
+            <form class="flex w-4/5 flex-col md:p-6 space-y-2">
+                <h3 class="text-xl md:text-3xl text-red font-bold">Find me here !</h3>
+                <a href="https://www.linkedin.com/in/arpittiwari237/" class="text-md md:text-lg pl-2 text-bwhite">LinkedIn</a>
+                <a href="https://github.com/Arpitxd41" class="text-md md:text-lg pl-2 text-bwhite">GitHub</a>
+                <a href="https://codesandbox.io/u/Arpitnt10" class="text-md md:text-lg pl-2 text-bwhite">Codesandbox</a>
+                <a href="https://www.freecodecamp.org/Arpitnt10" class="text-md md:text-lg pl-2 text-bwhite">Freecodecamp</a>
+                <a href="" class="text-lg pl-2 text-bwhite">Findcoder.io</a>
+            </form>
+            
+        </div>
+        <!-- BOTTOM LOWER -->
+        <div class="text-slate-600 text-md text-center leading-6 md:w-1/4 h-16 fit p-4">
+            <p class="">Made with <i class="fa fa-heart animate-characters text-sm"></i> by <a href="" class="hover:underline mb-2">Arpit</a></p>
+            <p class="">last updated :</p>
+            <p class="date"></p>
+        </div>
+
+        <!-- SCROLL TO TOP ARROW -->
+        <!-- <div class="flex-row w-full h-10">
+            <div class="w-11/12 bg-bwhite"></div>
+            <div class="arrow w-1/12">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>    
+        </div> -->
+    </div>    
+    <script src="./index.js"></script>
+</body>
+</html>
+<!-- We are limited only by our own imagination & with hardwork and sheer determination there is no limit to what one can accomplish. -->
