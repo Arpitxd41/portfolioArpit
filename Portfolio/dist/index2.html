@@ -21,7 +21,7 @@
                     aorange: '#581C87',
                     mblack: '#2E2E2E',
                     adark: '#060606BC',
-                    bwhite: '#F7F7F7',
+                    bwhite: 'rgb(203 213 225)',
                     lgrey: '#F7F7F7',
                     bgray: '#1A1A1A',
                     bgraytrans: '#000000A2',
@@ -48,7 +48,7 @@
 <body class="bg-black">
     
     <!-- NAVIGATION AREA -->
-    <div class="navArea bg-bgraytrans sticky top-0 text-bwhite px-8 flex justify-between items-center">
+    <div class="navArea bg-black/90 sticky top-0 text-bwhite px-8 flex justify-between items-center">
         <div class="flex space-x-4 px-4">
             <a href="" class="font-bold text-xl">
                 <span class="animate-characters text-aorange text-4xl">A</span>RPIT TIWARI
@@ -65,22 +65,27 @@
         </div>
 
         <!-- NAV LAST -->
-        <div class="hamburger justify-around lg:hidden h-8">
-            <div></div>            
-        </div>        
-        <div id="dropdown1" class="w-28">
-            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#home">Home</a>
-            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#about">About</a>
-            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#project">Projects</a>
-            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#resume">Resume</a>
-            <a class="transition px-4 py-2 rounded px-4 ease-in-out duration-300 hover:underline hover:text-aorange hover:font-bold hover:bg-black/70 hover:underline-offset-8" href="#contact">Contact</a>
-        </div>          
+        <div id="menuToggle">
+            <input type="checkbox" id="myCheckbox"/>
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+        </div>
+        <ul id="dropdown1" class="dropdown text-center align-right w-28 absolute right-0 top-10 bg-black/90 space-y-6 justify-around">
+            <br>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#home">Home</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#about">About</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#project">Projects</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#resume">Resume</a></li>
+                <li><a class="transition mt-2 px-4 py-3 rounded ease-in-out duration-300 hover:underline hover:text-fuchsia-500 font-bold hover:bg-black/70 hover:underline-offset-8" href="#contact">Contact</a></li>
+            <br>
+        </ul>
     </div>
 
     <!-- HERO -->
-    <div id="home" class="bg-[url('./assets/bg.jpg')] bg-cover bg-center bg-no-repeat md:py-4 sm:py-20">
-        <div class="hero-title content-center sm:text-center px-2 md:px-22 py-8 lg:py-24 sm:m-12">
-            <h2 class="box w-full md:w-5/6 lg:w-11/12 text-5xl md:px-12 px-0 py-2 font-bold text-red sm:mx-2 md:mx-16 md:px-0">WELCOME TO MY <span class="text-bwhite py-3">PORTFOLIO</span></h2>
+    <div id="home" class="bg-[url('./assets/bgi.jpg')] md:bg-[url('./assets/bg.jpg')] bg-cover bg-center bg-no-repeat md:py-4 py-20">
+        <div class="hero-title content-center text-center px-2 md:px-22 py-8 lg:py-24 sm:m-12">
+            <h2 class="w-full md:w-5/6 lg:w-11/12 text-5xl md:px-12 px-0 py-2 font-bold text-slate-300 sm:mx-2 md:mx-16 px-2">WELCOME TO MY <span class="text-5xl text-bwhite py-3">PORTFOLIO</span></h2>
             <div class="flex justify-around align-center h-10 w-full m-2">
                 <a href="#about">
                     <div class="arrows items-center h-6 object-contain">
@@ -234,9 +239,11 @@ I'm an Engineering Graduate from Government Engineering College-Bilaspur, in Ele
 </div> -->
 
         <!-- CV BUTTON -->
-        <div id="resume" class="justify-center flex py-12">
-            <a href="" class=""><button class="border-2 border-fuchsia-500 text-fuchsia-500 font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
-                hover:shadow-lg hover:shadow-black hover:bg-fuchsia-500 hover:text-black">Download Resume</button></a>
+        <div id="resume" class="resumeDownload justify-center flex py-12">
+            <a href="" class="">
+                <button id="downloadButton" class="border-2 border-fuchsia-500 text-fuchsia-500 font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
+                hover:shadow-lg hover:shadow-black hover:bg-fuchsia-500 hover:text-black">Download Resume</button>
+            </a>
         </div>
 
         <!-- RESUME -->
@@ -402,7 +409,7 @@ I'm an Engineering Graduate from Government Engineering College-Bilaspur, in Ele
                             <h4 class="font-semibold text-xl text-black underline">Portfolio WebSite</h4>
                             <p class="text-gray-950">A responsive Web-Site using HTML, CSS, Tailwind & JavaScript. I kept the design to suit the professional showcasing of the Portfolio of an Individual,
                                 While making it fully functioning with all the details that are possibly required by the Admin and the User.</p>
-                            <a href="" class="text-red text-sm">github.com/Arpitxd41/portfolioArpit</a>
+                            <a href="" class="text-red text-sm">portfolio-arpit.netlify.app</a>
                         </div>
                     </div>
                 </div>                
@@ -445,8 +452,10 @@ I'm an Engineering Graduate from Government Engineering College-Bilaspur, in Ele
 
         <!-- CV DOWNLOAD BUTTON -->
         <div class="justify-center lg:flex py-12 hidden">
-            <a href="" class=""><button class="border-2 border-aorange text-aorange font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
-                hover:shadow-lg hover:shadow-black hover:bg-aorange hover:text-black">Download Resume</button></a>
+            <a href="" class="">
+                <button id="downloadButton" class="resumeDownload border-2 border-aorange text-aorange font-semibold text-md lg:text-xl rounded-md px-8 py-1 lg:py-3 transition-smooth ease-in-out
+                hover:shadow-lg hover:shadow-black hover:bg-aorange hover:text-black">Download Resume</button>
+            </a>
         </div>
 
         <!-- APPLICATIONS -->
@@ -487,8 +496,12 @@ I'm an Engineering Graduate from Government Engineering College-Bilaspur, in Ele
                     <label autocomplete="off" for="message" class="text-beige text-left">Message :</label>
                     <textarea id="message" style="vertical-align:text-top" type="text" placeholder="Write your Message here" class="border-b-2 border-l-2 border-black py-1 pl-2 rounded-md text-sm focus:text-md focus:bg-zinc-950 text-bwhite bg-bgraytrans h-32" maxlength="500"></textarea>
                 </div>
-                <input type="submit" id="submit" class="submit bg-beige text-black py-1 md:py-2 text-xl rounded-md border-2 border-beige w-1/2
-            hover:bg-black hover:text-beige hover:shadow-lg hover:shadow-black mx-24 my-4">Submit</button>
+                <br>
+                <br>
+                <div class="w-full items-center">
+                    <input type="submit" id="submit" class="submit bg-beige text-black py-1 md:py-2 text-xl rounded-md border-2 border-beige w-1/2
+                hover:bg-black hover:text-beige hover:shadow-lg hover:shadow-black mx-12 my-4">Submit</button>
+                </div>
             </form>
             
         </div>
