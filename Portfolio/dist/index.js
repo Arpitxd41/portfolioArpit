@@ -26,7 +26,7 @@ submit.addEventListener('submit',(e)=>{
     </div>`;
 
     Email.send({
-        SecureToken : "0a2b6753-5060-442c-9149-66c9151bbcc4", //add your token here
+        SecureToken : "0a2b6753-5060-442c-9149-66c9151bbcc4", 
         To : 'arpitnt10@gmail.com', 
         From : "arpittiwari.in237@gmail.com",
         Subject : "Alert ! A visitor reached out ~ Portfolio!",
@@ -37,27 +37,17 @@ submit.addEventListener('submit',(e)=>{
 });
 
 // RESUME DOWNLOAD
-// Get the download button element
-// const downloadButton = document.getElementById('downloadButton');
-
-// Add a click event listener to the button
-// Get the download button element
 const downloadButton = document.getElementById('downloadButton');
-
-// Add a click event listener to the button
 downloadButton.addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent the default button click behavior
+  event.preventDefault(); 
   window.alert("Continue to Downloading Page.")
-  // Create a link element
+
   const link = document.createElement('a');
 
-  // Set the href attribute to the file URL
   link.href = 'AT-Resume.pdf';
 
-  // Set the download attribute to specify the filename
   link.setAttribute('download', 'AT-Resume.pdf');
   document.body.appendChild(link);
-  // Simulate a click event on the link
   link.click();
   document.body.removeChild(link);
 });
@@ -66,6 +56,7 @@ downloadButton.addEventListener('click', function(event) {
 
 const checkbox = document.getElementById('myCheckbox');
 const dropdown = document.getElementById('dropdown1');
+
 checkbox.addEventListener('change', function() {  
   // If the checkbox is checked
   if (checkbox.checked) {
